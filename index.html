@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">Logo</div>
+        <div class="header_spacer"></div>
+        <div class="linkedin">Linkedin</div>
+        <div class="github">Github</div>
+      </div>
+      <div class="main_frame">
+        <div class="sub_frame">
+          <div class="input">
+            <input
+              id="man"
+              type="number"
+              name="man"
+              placeholder="Nº de homens"
+            />
+
+            <img class="image" src="assets/man.png" />
+          </div>
+        </div>
+        <div class="sub_frame">
+          <div class="input">
+            <input
+              name="woman"
+              id="woman"
+              type="number"
+              placeholder="Nº de mulheres"
+            />
+
+            <img class="image" src="assets/woman.png" />
+          </div>
+        </div>
+        <div class="sub_frame">
+          <div class="input">
+            <input
+              name="kids"
+              id="kids"
+              type="number"
+              placeholder="Nº de crianças"
+            />
+
+            <img class="image" src="assets/kids.png" />
+          </div>
+        </div>
+        <div class="sub_frame">
+          <div class="input">
+            <input
+              name="time"
+              id="time"
+              type="number"
+              placeholder="Duração (horas)"
+            />
+
+            <img class="image" src="assets/clock.png" />
+          </div>
+        </div>
+        <div class="sub_frame button">
+          <button onclick="calc()" type="button">Calcular</button>
+        </div>
+        <div class="result" id="result"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
