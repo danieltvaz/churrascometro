@@ -10,6 +10,13 @@ function calc() {
   let woman = inputWoman.value;
   let kids = inputKids.value;
   let time = inputTime.value;
+
+  // verify if input values are null
+  if (men == "" && woman == "" && kids == "" && time == "") {
+    alert("Deve preencher pelo menos um campo");
+    return false;
+  }
+  console.log(men);
   // calc food
   let totalFood =
     men * foodPP_man(time) +
@@ -25,6 +32,7 @@ function calc() {
   let totalWater = (Number(men) + Number(woman) + Number(kids)) * waterPP(time);
   result.innerHTML = `<p>${totalFood / 1000}Kg de Carne</p>`;
   result.innerHTML += `<p>${totalBeer / 1000}L de Cerveja</p>`;
+
   if (kids != 0) {
     result.innerHTML += `<p>${totalSoda / 1000}L de Refrigerante</p>`;
   }
@@ -71,7 +79,7 @@ function sodaPP_kids(time) {
   else if (time > 6) return 2000;
 }
 function waterPP(time) {
-  if (time <= 4) return 1000;
-  else if (time > 4 && time <= 6) return 1200;
-  else if (time > 6) return 1500;
+  if (time <= 4) return 200;
+  else if (time > 4 && time <= 6) return 300;
+  else if (time > 6) return 500;
 }
