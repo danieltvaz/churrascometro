@@ -16,7 +16,6 @@ function calc() {
     alert("Deve preencher pelo menos um campo");
     return false;
   }
-  console.log(men);
   // calc food
   let totalFood =
     men * foodPP_man(time) +
